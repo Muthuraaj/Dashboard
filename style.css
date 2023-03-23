@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#sidebar{
+    width: 5%;
+    height: 100%;
+    background-color: #041737; 
+}
+#main-content{
+    width: 95%;
+    height: 100%;
+}
+#header{
+    width: 100%;
+    height: 10%;
+}
+#main-pages{
+    width: 100%;
+    height: 90%;
+}
+#sideheader{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5%;
+}
+#sideheader h4{
+    color: #EA7E54;
+    padding: 5px;
+    margin-top: 5px;
+}
+.button{
+    font-size: 1.1rem;
+    background-color: #EA7E54;
+    color: #fff;
+    margin-left: 16%;
+    width: 50%;
+     height: 100%;
+}
+.button1{
+    font-size: 1.1rem;
+    /* background-color: #EA7E54; */
+    color: #fff;
+    margin-left: 16%;
+    width: 50%;
+     height: 100%;
+}
+/* sidemenus styling */
+.sidemenus h4{
+    color: #49688D;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sidemenus a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #829ab9;
+}
+.sidemenus{
+    width: 100%;
+    padding-left: 10%;
+    margin-top: 10px;
+}
+hr{
+    color: lavender;
+    width: 60%;
+    margin-left: 10%;
+}
+.sidemenus i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.sidemenus i:hover{
+    color: lightgray;
+}
+#sideelement1{
+    height: 35%;
+
+}
+#sideelement2{
+    height: 30%;
+}
+#sideelement3{
+    height: 30%;
+}
+.sidemenus span,h4,hr{
+    display: none;
+}
+#mobileButton{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    body{
+        /* width: 100%; */
+        display: block;
+    }
+    #sidebar{
+        width: 100%;
+        height: 5%;
+    }
+    #sideheader h4{
+        display: none;
+    }
+    .sidemenus{
+        display: none;
+    }
+    #mobileButton{
+        display: block;
+    }
+    #btn{
+        display: none;
+    }
+}
