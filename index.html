@@ -16,41 +16,299 @@
 <body>
   <aside id="sidebar">
     <div id="sideheader">
-      <h4 class="Sidebar Mobclass"><i >CRM.io</i></h4>
+      <h4 class="Sidebar "><i >CRM.io</i></h4>
       <button  class="button" id="btn"><i class="bi bi-list"></i></button>
-      <button class="button1" id="mobileButton"><i class="bi bi-toggle-on"></i></button>
+      <button class="button" id="mobileButton"><i class="bi bi-toggle-on"></i></button>
     </div>
-    <div class="sidemenus" id="Sideelement1">
-      <h4 class="Sidebar Mobclass">Management</h4>
-      <a href="" class="Mobclass"><i class="bi bi-ui-checks-grid" class="Mobclass"></i> <span class="Sidebar">Dashboard</span> </a>
-      <a href="" class="Mobclass"><i class="bi bi-files" class="Mobclass"></i> <span class="Sidebar">Document</span></a>
-      <a href="" class="Mobclass"><i class="bi bi-clipboard2-data-fill" class="Mobclass"></i> <span class="Sidebar">Contact</span></a>
-      <a href="" class="Mobclass"><i class="bi bi-folder" class="Mobclass"></i> <span class="Sidebar">Prospect</span></a>
-      <a href="" class="Mobclass"><i class="bi bi-recycle" class="Mobclass"></i> <span class="Sidebar">Workflow</span></a>
-      <hr class="Sidebar">
+    <div class="sidemenus Mobclass" id="Sideelement1">
+      <h4 class="Sidebar">Management</h4>
+      <a href="" class="active"><i class="bi bi-ui-checks-grid" ></i> <span class="Sidebar">Dashboard</span> </a>
+      <a href="" ><i class="bi bi-files" ></i> <span class="Sidebar">Document</span></a>
+      <a href="" ><i class="bi bi-clipboard2-data-fill" ></i> <span class="Sidebar">Contact</span></a>
+      <a href="" ><i class="bi bi-folder" ></i> <span class="Sidebar">Prospect</span></a>
+      <a href="" ><i class="bi bi-recycle" ></i> <span class="Sidebar">Workflow</span></a>
+      <hr>
     </div>
     
-    <div class="sidemenus" id="Sideelement2">
-      <h4 class="Sidebar Mobclass">Connection</h4>
-      <a href="" class="Mobclass"><i class="bi bi-chat" class="Mobclass"></i> <span class="Sidebar">Chating</span></a>
-      <a href="" class="Mobclass"><i class="bi bi-bank " class="Mobclass"></i> <span class="Sidebar">Marketing</span></a>
-      <a href="" class="Mobclass"><i class="bi bi-folder" class="Mobclass"></i> <span class="Sidebar">Email</span></a> 
+    <div class="sidemenus Mobclass" id="Sideelement2">
+      <h4 class="Sidebar">Connection</h4>
+      <a href="" ><i class="bi bi-chat" ></i> <span class="Sidebar">Chating</span></a>
+      <a href="" ><i class="bi bi-bank " ></i> <span class="Sidebar">Marketing</span></a>
+      <a href="" ><i class="bi bi-folder" ></i> <span class="Sidebar">Email</span></a> 
     <hr>
     </div>
 
-    <div class="sidemenus" id="Sideelement3">
-      <h4 class="Sidebar Mobclass"> Customer</h4>
-      <a href="" class="Mobclass"><i class="bi bi-arrow-left-right" class="Mobclass"></i> <span class="Sidebar">Transaction</span></a>
-      <a href="" class="Mobclass"><i class="bi bi-gear" class="Mobclass"></i> <span class="Sidebar">Maintaince</span></a>
+    <div class="sidemenus Mobclass" id="Sideelement3">
+      <h4 class="Sidebar "> Customer</h4>
+      <a href="" ><i class="bi bi-arrow-left-right" ></i> <span class="Sidebar">Transaction</span></a>
+      <a href="" ><i class="bi bi-gear" ></i> <span class="Sidebar">Maintaince</span></a>
     </div>
   </aside>
   <div id="main-content">
     <div id="header">
+      <div class="" id="header1">
+        <h2>Overview</h2>
+      </div>
+      <div class="" id="header2">
+        <i class="bi bi-bell fw-bold"></i>
+        <img src="img/icons8-grinning-face-with-big-eyes-64.png" alt="" class="img-fluid"
+          style="height: 25px; width: 25px;">
+        <h5 class="">
 
+          <select id="admin">
+            <option>Administrator</option>
+            <option> User 1</option>
+            <option>User 2</option>
+            <option>User 3</option>
+          </select>
+        </h5>
+
+      </div>
     </div>
     <div id="main-pages">
-      <div class="showcase" id="dashboard">
+      <div id="loader">
 
+      </div>
+      <div class="showcase active" id="dashboard">
+        <div class="" id="mainContent">
+          <div class="main-flex" id="content1">
+            <!-- cards start -->
+            <div class="" id="card">
+              <!-- card 1 -->
+              <div class="cardsContent" id="card1">
+                <div class="cards"    >
+                  <div class="">
+                    <h5>Document<i class="bi bi-printer text ms-5 "></i></h5>
+                    <h2>146.000</h2>
+                    <p class="text-color"><i class="bi bi-arrow-up-right green"></i><span class="green">17%</span> since last week</p>
+                    <!-- Button trigger modal -->
+
+                  </div>
+                 
+
+                </div>
+              </div>
+              <!-- card 1 ends -->
+              <!-- card 2 -->
+             
+                <div class="cardsContent" id="card2">
+                  <div class="cards">
+                    <h5 class=" ">Contact<i class="bi bi-telephone ms-5"></i></h5>
+                    <h2 class="">1400</h2>
+                    <p class="text-color"><i class="bi bi-arrow-up-right green"></i><span class="green">17%</span> since last week</p>
+                    <!-- Button trigger modal -->
+                  </div>
+                </div>
+                <!-- card 2 ends -->
+                
+                <!-- card 3 -->
+              
+                <div class="cardsContent" id="card3">
+                  <div class="cards">
+                    <h5 class="">Email<i class="bi bi-envelope"></i></h5>
+                    <h2 class="">150.700</h2>
+                    <p class="text-color"><i class="bi bi-arrow-up-right green"></i><span class="green">17%</span> since last week</p>
+                  </div>
+                </div>
+                <!-- card 3 ends-->
+            </div>
+            <!-- card end -->
+
+            <!-- Middle container -->
+            <div class="  container2  " id="MiddleContent">
+              <div class="" id="barchart">
+                <div class="" id="barchart-1">
+                  <h5 class="heading ">Recent worklows</h5>
+                  <p class="green"><i class="bi bi-arrow-up-right"></i><span>17%</span></p>
+                  <img src="img/chart3.png" alt="" class="img-fluid">
+                </div>
+                <div class="" id="barchart-2">
+                  <h5 class="heading ">Recent Marketing</h5>
+                  <p class="green"><i class="bi bi-arrow-up-right"></i><span>17%</span></p>
+                  <img src="img/chart1.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <!-- Middle container ends -->
+
+            <!-- Footer content -->
+            <div class="footer" id="main-table">
+              <div class="" id="foot1">
+                <div class="">
+                  <h5 class="">Document</h5>
+                </div>
+                <div class="">
+                  <select class="btn btn-light  " style="background-color: #F0F1F3; border-radius: 10px;">
+                    <option>Weekly</option>
+                    <option>Day 1</button></option>
+                    <option>Day 2</button></option>
+                    <option>Day 3</button></option>
+                  </select>
+                </div>
+              </div>
+              <p class="" id="foot2">Document tracking information</p>
+              <!-- Borderless table -->
+              <div class="tablemain" id="foot3">
+                <table class="table table-hover table-sm table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">File</th>
+                      <th scope="col">Category</th>
+                      <th scope="col">Author</th>
+                      <th scope="col" class="">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Annual Report</td>
+                      <td>PDF</td>
+                      <td>property</td>
+                      <td>muthuraaj</td>
+                      <td><button class="btn btn-outline-success">send</button></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Business Plan</td>
+                      <td>WORD</td>
+                      <td>cryptocurrency</td>
+                      <td>Muthukumar</td>
+                      <td><button class="btn btn-outline-success">send</button></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Marketing Tool</td>
+                      <td>PDF</td>
+                      <td>content creator</td>
+                      <td>Vishnu</td>
+                      <td><button class="btn btn-outline-success">send</button></td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+              <!-- Borderless Table ends -->
+
+            </div>
+            <!-- Footer content Ends -->
+          </div>
+
+          <!-- flex item1 ends -->
+
+          <!-- flex item2 -->
+
+          <div class="right-side"  id="content2">
+            <!-- RIGHT HEADING -->
+            <div class="heading ">
+              <h5>Popular Product</h5>
+            </div>
+            <!-- Right body -->
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+
+                <p class="">Gadgets Corner</p>
+                <p class="">$20</p>
+
+
+              </div>
+
+            </div>
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+                <div class="margin">
+                  <p class="">Lens Cart</p>
+                  <p class="">$40</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+                <div class="margin">
+                  <p class="">Camera Show</p>
+                  <p class="">$25</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+                <div class="margin">
+                  <p class="">Photo Shoot</p>
+                  <p class="">$50</p>
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <!-- RIGHT HEADING 2-->
+            <div class="heading ">
+              <h5>Chats</h5>
+            </div>
+
+            <!-- RIGHT HEADING2 ENDS -->
+
+            <!-- Right body2 -->
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+
+                <p class="">Muthuraaj</p>
+                <p class="">How are you!</p>
+
+              </div>
+
+            </div>
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+
+                <p class="">Vishnu</p>
+                <p class="">What u done</p>
+              </div>
+            </div>
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+                <p class="">Jayakannan</p>
+                <p class="">Where r u!</p>
+              </div>
+            </div>
+            <div class="item-body ">
+              <div class="dot ">
+                <p></p>
+              </div>
+              <div class="">
+                <p class="">Karpagam</p>
+                <p class="">Do something</p>
+              </div>
+            </div>
+
+            <!-- Right body ends -->
+
+          </div>
+
+
+          <!-- flex item2 enda -->
+        </div>
       </div>
       <div class="showcase" id="document"></div>
       <div class="showcase" id="contact"></div>
