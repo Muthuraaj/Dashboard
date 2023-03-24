@@ -397,7 +397,8 @@ hr{
     }
     #barchart-2{
         width: 100%;
-        margin-top: 10px;        
+        margin-top: 10px;
+        margin-left: 0px;        
     }
     #main-table{
         width: 100%;
