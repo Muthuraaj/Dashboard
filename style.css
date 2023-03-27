@@ -1,492 +1,477 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color: #F0F1F3;;
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #f0f1f3;
 }
-#sidebar{
-    width: 5%;
-    height: 100%;
-    background-color: #041737; 
+#sidebar {
+  width: 5%;
+  height: 100%;
+  background-color: #041737;
 }
-#main-content{
-    width: 94%;
-    height: 98%;
-    padding-left: 5px;
+#main-content {
+  width: 94%;
+  height: 98%;
+  padding-left: 5px;
 }
-#header{
-    width: 100%;
-    height: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#header1{
-    
-    height: 100%;
+#header1 {
+  height: 100%;
 }
-#header2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    
-    height: 100%;
+#header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  height: 100%;
 }
-#header select{
-    outline: none;
-    border: none;
-    background-color: transparent;
+#header select {
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
-#main-pages{
-    width: 100%;
-    height: 95%;
+#main-pages {
+  width: 100%;
+  height: 95%;
 }
-#sideheader{
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 5%;
+#sideheader {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5%;
 }
-#sideheader h4{
-    color: #EA7E54;
-     padding: 5px; 
-    margin-top: 5px;
+#sideheader h4 {
+  color: #ea7e54;
+  padding: 5px;
+  margin-top: 5px;
 }
-.button{
-    font-size: 1.1rem;
-    background-color: #EA7E54;
-    color: #fff;
-    margin-left: 20%;
-   width: 40px;
-   height: 40px;
+.button {
+  font-size: 1.1rem;
+  background-color: #ea7e54;
+  color: #fff;
+  margin-left: 20%;
+  width: 40px;
+  height: 40px;
 }
 
 /* sidemenus styling */
-.sidemenus h4{
-    color: #49688D;
-    font-size: 18px;
-    font-weight: bold;
-    padding-left: 5px;
+.sidemenus h4 {
+  color: #49688d;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 5px;
 }
-.sidemenus a{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-decoration: none;
-    margin-bottom: 3px;
-    color: #829ab9;
+.sidemenus a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  margin-bottom: 3px;
+  color: #829ab9;
 }
 
-hr{
-    color: lavender;
-    width: 60%;
-    margin-left: 10%;
+hr {
+  color: lavender;
+  width: 60%;
+  margin-left: 10%;
 }
-.sidemenus i{
-    /* display: flex;
+.sidemenus i {
+  /* display: flex;
     align-items: center;
     justify-content: center; */
-    padding: 15px;
-    font-size: 1.2rem;
-    color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  /* color: #fff; */
 }
-.sidemenus i:hover{
-    color: lightgray;
-}
-#sideelement1{
-    height: 35%;
-    width: 100%;
-}
-.sidemenus{
-    padding-left: 20%;
-    
-}
-.sidemenus h4{
-    width: 100%;
-    height: 14.2%;
-}
-.sidemenus a{
-    width: 100%;
-    height: 14.2%;
-}
-.sidemenus hr{
-    width: 100%;
-    height: 14.2%;
-}
-#sideelement2{
-    height: 30%;
-    width: 100%;
-    
-    margin-top: 10px;
-}
-#sideelement3{
-    height: 30%;
-    width: 100%;
-    
-    margin-top: 10px;
-}
-.sidemenus span,h4,hr{
-    display: none;
-}
-#mobileButton{
-    display: none;
-}
-.showcase{
-    display: none;
-    width: 100%;
-    height: 100%;
-}
-#mainContent{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-#content1{
-    width: 79%;
-    height: 100%;
-    padding-left:5px ;
-}
-#content2{
-    width: 20%;
-    height: 100%;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 5px;
 
+#sideelement1 {
+  height: 35%;
+  width: 100%;
 }
-#content2:hover{
-    box-shadow: 0px 0px 5px #041737;
-    cursor: pointer;
+.sidemenus {
+  padding-left: 20%;
 }
-.dot{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #041737;
-    margin-right: 5px;
+.sidemenus h4 {
+  width: 100%;
+  height: 14.2%;
 }
-.item-body{
-    display: flex;
-    padding-left: 4px;
-    
+.sidemenus a {
+  width: 100%;
+  height: 14.2%;
 }
-.green{
-    color: rgb(119, 197, 119);
+.sidemenus hr {
+  width: 100%;
+  height: 14.2%;
 }
-#card{
-    width: 99%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+#sideelement2 {
+  height: 30%;
+  width: 100%;
 
+  margin-top: 10px;
 }
-.cardsContent{
-    width: 32%;
-    height: 100%;
+#sideelement3 {
+  height: 30%;
+  width: 100%;
+
+  margin-top: 10px;
 }
-.cards{
-     width: 100%; 
-    height: 100%;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
+.sidemenus span,
+h4,
+hr {
+  display: none;
 }
-.cards:hover{
-    box-shadow: 0px 0px 5px #041737;
-    cursor: pointer;
+#mobileButton {
+  display: none;
+}
+.showcase {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#mainContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#content1 {
+  width: 79%;
+  height: 100%;
+  padding-left: 5px;
+}
+#content2 {
+  width: 20%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+#content2:hover {
+  box-shadow: 0px 0px 5px #041737;
+  cursor: pointer;
+}
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #041737;
+  margin-right: 5px;
+}
+.item-body {
+  display: flex;
+  padding-left: 4px;
+  height: 10%;
+  width: 100%;
+}
+.green {
+  color: rgb(119, 197, 119);
+}
+#card {
+  width: 99%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cardsContent {
+  width: 32%;
+  height: 100%;
+}
+.cards {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.cards:hover {
+  box-shadow: 0px 0px 5px #041737;
+  cursor: pointer;
 }
 /* #card1{
     margin-right: 10px;
 } */
-#card2{
-    margin-left: 20px;
-
+#card2 {
+  margin-left: 20px;
 }
-#card3{
-    margin-left: 20px;
-
+#card3 {
+  margin-left: 20px;
 }
-.cards h5 i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    background-color: #DEECF6;
-    color: #3A98B5;
+.cards h5 i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #deecf6;
+  color: #3a98b5;
 }
-.cards h5{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.cards h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#MiddleContent{
-    width: 99%;
-    height: 39%;
-    margin-top: 10px;
-    padding: 5px;
+#MiddleContent {
+  width: 99%;
+  height: 39%;
+  margin-top: 10px;
+  padding: 5px;
 }
-#barchart{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
+#barchart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#barchart img {
+  width: 70%;
+  height: 70%;
+}
+#barchart-1 {
+  width: 50%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+#barchart-1:hover {
+  box-shadow: 0px 0px 5px #041737;
+  cursor: pointer;
+}
+#barchart-2 {
+  width: 50%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+}
+#barchart-2:hover {
+  box-shadow: 0px 0px 5px #041737;
+  cursor: pointer;
+}
+#main-table {
+  width: 98%;
+  height: 39%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 5px;
+}
+#main-table:hover {
+  box-shadow: 0px 0px 5px #041737;
+  cursor: pointer;
+}
+#foot1 {
+  width: 100%;
+  height: 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#foot2 {
+  width: 100%;
+  height: 7.5%;
+  margin-top: 3px;
+}
+#foot3 {
+  width: 100%;
+  height: 80%;
+  margin-top: 3px;
+}
 
-}
-#barchart img{
-    width: 70%;
-    height: 70%;
-}
-#barchart-1{
-    width: 50%;
-    height: 100%;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-right: 10px;
-    padding: 5px;
-}
-#barchart-1:hover{
-    box-shadow: 0px 0px 5px #041737;
-    cursor: pointer;
-}
-#barchart-2{
-    width: 50%;
-    height: 100%;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    margin-left: 10px;
-}
-#barchart-2:hover{
-    box-shadow: 0px 0px 5px #041737;
-    cursor: pointer;
-}
-#main-table{
-    width: 98%;
-    height: 39%;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    margin-left: 5px;
-}
-#main-table:hover{
-    box-shadow: 0px 0px 5px #041737;
-    cursor: pointer;
-}
-#foot1{
-    width: 100%;
-    height: 7.5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#foot2{
-    width: 100%;
-    height: 7.5%;
-    margin-top: 3px;
-}
-#foot3{
-    width: 100%;
-    height: 80%;
-    margin-top: 3px;
-}
-.active{
-    display: block;    
-}
 /* loader styling */
- #loader{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border:16px solid #f3f5f3;
-    border-top:16px solid #3498db;
-    animation: spin 2s linear infinite;
-    margin: 0 auto;
-    margin-top: 20%;
-    display: none;
+#loader {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 16px solid #f3f5f3;
+  border-top: 16px solid #3498db;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 20%;
+  display: none;
 }
 @keyframes spin {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-} 
-/* loader ends */
-@media screen and (max-width:600px) {
-    body{
-        width: 100%; 
-        height: 100%;
-        flex-direction: column;
-    }
-    #sidebar{
-        width: 100%;
-        height: 5%;
-    }
-    #sideheader h4{
-        display: none;
-    }
-    .sidemenus{
-        display: none;
-    }
-    #mobileButton{
-        display: block;
-    }
-    #btn{
-        display: none;
-    }
-    #mainContent{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-    }
-    #content1{
-        width: 100%;
-        height: 100%;
-    }
-    #content2{
-        width: 100%;
-        height: 100%;
-        margin-top: 10px;
-    }
-    #card{
-        flex-direction: column;
-        width: 100%;
-        height: 33%; 
-        gap: 10px;
-    }
-    .cardsContent{
-        width: 100%;
-        height: 100%;
-    }
-    #card2{
-        margin-left: 0px;
-    
-    }
-    #card3{
-        margin-left: 0px;
-    
-    }
-    #MiddleContent{
-        width: 100%;
-        
-    }
-    #barchart{
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-    #barchart-1{
-        width: 100%;
-    }
-    #barchart-2{
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 0px;        
-    }
-    #main-table{
-        width: 100%;
-        margin-top: 10px;
-
-    }
-    #foot3{
-        overflow: scroll;
-    }
-
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-@media screen and (min-width:600px) and (max-width:1000px) {
-    body{
-        width: 100%; 
-        height: 100%;
-        flex-direction: column;
-    }
-    #sidebar{
-        width: 100%;
-        height: 5%;
-    }
-    #sideheader h4{
-        display: none;
-    }
-    .sidemenus{
-        display: none;
-    }
-    #mobileButton{
-        display: block;
-    }
-    #btn{
-        display: none;
-    }
-    #mainContent{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-    }
-    #content1{
-        width: 100%;
-        height: 100%;
-    }
-    #content2{
-        width: 100%;
-        height: 100%;
-        margin-top: 10px;
-    }
-    #card{
-        flex-direction: row;
-        width: 100%;
-        height: 33%; 
-        gap: 10px;
-    }
-    .cardsContent{
-        width: 100%;
-        height: 100%;
-    }
-    #card2{
-        margin-left: 0px;
-    
-    }
-    #card3{
-        margin-left: 0px;
-    
-    }
-    #MiddleContent{
-        width: 100%;
-        
-    }
-    #barchart{
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-    #barchart-1{
-        width: 100%;
-    }
-    #barchart-2{
-        width: 100%;
-        margin-top: 10px;        
-    }
-    #main-table{
-        width: 100%;
-        margin-top: 10px;
-
-    }
-    #foot3{
-        overflow: scroll;
-    }
-
+/* loader ends */
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  #sidebar {
+    width: 100%;
+    height: 5%;
+  }
+  #sideheader h4 {
+    display: none;
+  }
+  .sidemenus {
+    display: none;
+  }
+  #mobileButton {
+    display: block;
+  }
+  #btn {
+    display: none;
+  }
+  #mainContent {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  #content1 {
+    width: 100%;
+    height: 100%;
+  }
+  #content2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  #card {
+    flex-direction: column;
+    width: 100%;
+    height: 33%;
+    gap: 10px;
+  }
+  .cardsContent {
+    width: 100%;
+    height: 100%;
+  }
+  #card2 {
+    margin-left: 0px;
+  }
+  #card3 {
+    margin-left: 0px;
+  }
+  #MiddleContent {
+    width: 100%;
+  }
+  #barchart {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  #barchart-1 {
+    width: 100%;
+  }
+  #barchart-2 {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  #main-table {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #foot3 {
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  body {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  #sidebar {
+    width: 100%;
+    height: 5%;
+  }
+  #sideheader h4 {
+    display: none;
+  }
+  .sidemenus {
+    display: none;
+  }
+  #mobileButton {
+    display: block;
+  }
+  #btn {
+    display: none;
+  }
+  #mainContent {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  #content1 {
+    width: 100%;
+    height: 100%;
+  }
+  #content2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  #card {
+    flex-direction: row;
+    width: 100%;
+    height: 33%;
+    gap: 10px;
+  }
+  .cardsContent {
+    width: 100%;
+    height: 100%;
+  }
+  #card2 {
+    margin-left: 0px;
+  }
+  #card3 {
+    margin-left: 0px;
+  }
+  #MiddleContent {
+    width: 100%;
+  }
+  #barchart {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  #barchart-1 {
+    width: 100%;
+  }
+  #barchart-2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #main-table {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #foot3 {
+    overflow: scroll;
+  }
 }
