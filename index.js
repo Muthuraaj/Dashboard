@@ -1,6 +1,6 @@
-// Sidebar coding
+// // Sidebar coding
 
-// variables selection
+// // variables selection
 const button = document.getElementById("btn");
 const SideContent = document.getElementsByClassName("Sidebar");
 const Sidemenu = document.getElementById("sidebar");
@@ -16,6 +16,7 @@ window.onresize = onload = () => {
   windowWidth = this.innerWidth;
   Sidebar(windowWidth);
 };
+Sidebar();
 function Sidebar(windowWidth) {
   if (windowWidth < 1000) {
     Sidemenu.style.height = "5%";
@@ -68,55 +69,58 @@ function lapscreen() {
 }
 
 // tabs
-loader.style.display = "block";
 
-setTimeout(() => {
-  loader.style.display = "none";
-  tabs.forEach((t, i) => {
-    show.forEach((s) => {
-      s.id === "dashboard"
-        ? (document.getElementById("dashboard").style.display = "block") &&
-          (document.getElementById("dashboard_icon").style.color = "#ea7e54")
-        : "";
-    });
-    t.addEventListener("click", () => {
-      tabs.forEach((t) => {
-        t.style.backgroundColor = "transparent";
-        t.style.color = "#fff";
-        loader.style.display = "block";
-        // t.style.width = "100%";
-      });
-      show.forEach((s) => {
-        s.style.display = "none";
-      });
-      t.style.color = "#ea7e54";
-      loader.style.display = "none";
-      // t.style.backgroundColor = "#ea7e54";
-      show[i].style.display = "block";
-      // console.log(t);
-    });
+tabs.forEach((t, i) => {
+  show.forEach((s) => {
+    s.id === "dashboard"
+      ? (document.getElementById("dashboard").style.display = "block") &&
+        (document.getElementById("dashboard_icon").style.color = "#ea7e54")
+      : "";
   });
-}, 1000);
+  t.addEventListener("click", () => {
+    tabs.forEach((t) => {
+      t.style.backgroundColor = "transparent";
+      t.style.color = "#fff";
+      t.style.display = "flex";
+      t.style.alignItems = "center";
+      t.style.justifyContent = "start";
+      // t.style.width = "100%";
+    });
+    show.forEach((s) => {
+      s.style.display = "none";
+    });
+    t.style.color = "black";
+    t.style.backgroundColor = "lightgray";
+    t.style.borderRadius = "5px";
+    t.style.display = "flex";
+    t.style.alignItems = "center";
+    t.style.justifyContent = "center";
+    // t.style.backgroundColor = "#ea7e54";
+    show[i].style.display = "block";
+    // console.log(t);
+  });
+});
 // const myFun = tabs.forEach((t, i) => {
-//   show.forEach((s) => {
-//     s.id === "dashboard"
-//       ? (document.getElementById("dashboard").style.display = "block") &&
-//         (document.getElementById("dashboard_icon").style.color = "#ea7e54")
-//       : "";
-//   });
-//   t.addEventListener("click", () => {
-//     tabs.forEach((t) => {
-//       t.style.backgroundColor = "transparent";
-//       t.style.color = "#fff";
-//       // t.style.width = "100%";
-//     });
-//     show.forEach((s) => {
-//       s.style.display = "none";
-//     });
-//     t.style.color = "#ea7e54";
-//     // t.style.backgroundColor = "#ea7e54";
-//     show[i].style.display = "block";
-//     // console.log(t);
-//   });
-// });
-// default display
+// //   show.forEach((s) => {
+// //     s.id === "dashboard"
+// //       ? (document.getElementById("dashboard").style.display = "block") &&
+// //         (document.getElementById("dashboard_icon").style.color = "#ea7e54")
+// //       : "";
+// //   });
+// //   t.addEventListener("click", () => {
+// //     tabs.forEach((t) => {
+// //       t.style.backgroundColor = "transparent";
+// //       t.style.color = "#fff";
+// //       // t.style.width = "100%";
+// //     });
+// //     show.forEach((s) => {
+// //       s.style.display = "none";
+// //     });
+// //     t.style.color = "#ea7e54";
+// //     // t.style.backgroundColor = "#ea7e54";
+// //     show[i].style.display = "block";
+// //     // console.log(t);
+// //   });
+// // });
+// // default display
+// console.log("aneshh");

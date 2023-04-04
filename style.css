@@ -8,6 +8,7 @@ body {
   height: 100vh;
   display: flex;
   background-color: #f0f1f3;
+  user-select: none;
 }
 #sidebar {
   width: 5%;
@@ -93,7 +94,9 @@ hr {
   /* display: flex;
     align-items: center;
     justify-content: center; */
-  padding: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+
   font-size: 1.2rem;
   /* color: #fff; */
 }
@@ -112,6 +115,8 @@ hr {
 .sidemenus a {
   width: 100%;
   height: 14.2%;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 .sidemenus hr {
   width: 100%;
@@ -133,6 +138,16 @@ hr {
 h4,
 hr {
   display: none;
+}
+#btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+#btn img {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 #mobileButton {
   display: none;
@@ -156,7 +171,7 @@ hr {
   width: 20%;
   height: 100%;
   border: 2px solid #ffffff;
-  background-color: #ffffff;
+  background-color: rgb(194, 185, 185);
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
@@ -334,6 +349,10 @@ hr {
     width: 100%;
     height: 5%;
   }
+  #main-content {
+    height: 95%;
+    width: 100%;
+  }
   #sideheader h4 {
     display: none;
   }
@@ -359,6 +378,7 @@ hr {
     width: 100%;
     height: 100%;
     margin-top: 10px;
+    margin-left: 10px;
   }
   #card {
     flex-direction: column;
