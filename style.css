@@ -2,13 +2,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body {
+#body {
   width: 100%;
   height: 100vh;
   display: flex;
   background-color: #f0f1f3;
   user-select: none;
+}
+
+aside a {
+  font-size: 14px;
+}
+p {
+  font-size: 14px;
 }
 #sidebar {
   width: 5%;
@@ -21,6 +29,7 @@ body {
   padding-left: 5px;
 }
 #header {
+  margin-top: 5px;
   width: 100%;
   height: 5%;
   display: flex;
@@ -60,7 +69,17 @@ body {
   padding: 5px;
   margin-top: 5px;
 }
-.button {
+.button1 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 20%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.button2 {
   font-size: 1.1rem;
   background-color: #ea7e54;
   color: #fff;
@@ -68,21 +87,18 @@ body {
   width: 40px;
   height: 40px;
 }
-
 /* sidemenus styling */
 .sidemenus h4 {
   color: #49688d;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   padding-left: 5px;
 }
 .sidemenus a {
-  display: flex;
-  align-items: center;
-  justify-content: start;
   text-decoration: none;
   margin-bottom: 3px;
   color: #829ab9;
+  width: 50px;
 }
 
 hr {
@@ -91,16 +107,18 @@ hr {
   margin-left: 10%;
 }
 .sidemenus i {
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
+  /*display: flex;
+  align-items: center;
+  justify-content: center; */
   padding-right: 10px;
   padding-left: 10px;
 
   font-size: 1.2rem;
   /* color: #fff; */
 }
-
+.light {
+  color: rgb(194, 185, 185);
+}
 #sideelement1 {
   height: 35%;
   width: 100%;
@@ -117,6 +135,9 @@ hr {
   height: 14.2%;
   padding-top: 10px;
   padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 .sidemenus hr {
   width: 100%;
@@ -138,16 +159,6 @@ hr {
 h4,
 hr {
   display: none;
-}
-#btn {
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-#btn img {
-  background-color: transparent;
-  border: none;
-  outline: none;
 }
 #mobileButton {
   display: none;
@@ -171,7 +182,7 @@ hr {
   width: 20%;
   height: 100%;
   border: 2px solid #ffffff;
-  background-color: rgb(194, 185, 185);
+  background-color: #ffffff;
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
@@ -193,6 +204,9 @@ hr {
   height: 10%;
   width: 100%;
 }
+.item-body p {
+  margin: 0;
+}
 .green {
   color: rgb(119, 197, 119);
 }
@@ -201,11 +215,12 @@ hr {
   height: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 10px;
+  gap: 10px;
 }
 .cardsContent {
-  width: 32%;
+  width: 31%;
   height: 100%;
 }
 .cards {
@@ -223,12 +238,7 @@ hr {
 /* #card1{
     margin-right: 10px;
 } */
-#card2 {
-  margin-left: 20px;
-}
-#card3 {
-  margin-left: 20px;
-}
+
 .cards h5 i {
   display: flex;
   align-items: center;
@@ -300,6 +310,12 @@ hr {
   box-shadow: 0px 0px 5px #041737;
   cursor: pointer;
 }
+tbody {
+  font-size: 14px;
+}
+thead {
+  font-size: 16px;
+}
 #foot1 {
   width: 100%;
   height: 7.5%;
@@ -317,7 +333,10 @@ hr {
   height: 80%;
   margin-top: 3px;
 }
-
+.Tabsdisable {
+}
+.Tabsactive {
+}
 /* loader styling */
 #loader {
   width: 120px;
@@ -338,9 +357,10 @@ hr {
     transform: rotate(360deg);
   }
 }
+
 /* loader ends */
 @media screen and (max-width: 600px) {
-  body {
+  #body {
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -348,10 +368,6 @@ hr {
   #sidebar {
     width: 100%;
     height: 5%;
-  }
-  #main-content {
-    height: 95%;
-    width: 100%;
   }
   #sideheader h4 {
     display: none;
@@ -390,11 +406,17 @@ hr {
     width: 100%;
     height: 100%;
   }
+  #card1 {
+    width: 100%;
+    height: 100%;
+  }
   #card2 {
-    margin-left: 0px;
+    width: 100%;
+    height: 100%;
   }
   #card3 {
-    margin-left: 0px;
+    width: 100%;
+    height: 100%;
   }
   #MiddleContent {
     width: 100%;
@@ -420,8 +442,9 @@ hr {
     overflow: scroll;
   }
 }
+
 @media screen and (min-width: 600px) and (max-width: 1000px) {
-  body {
+  #body {
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -429,6 +452,13 @@ hr {
   #sidebar {
     width: 100%;
     height: 5%;
+  }
+  #main-content {
+    height: 95%;
+    width: 100%;
+  }
+  .sidemenus a {
+    width: 60%;
   }
   #sideheader h4 {
     display: none;
@@ -456,22 +486,7 @@ hr {
     height: 100%;
     margin-top: 10px;
   }
-  #card {
-    flex-direction: row;
-    width: 100%;
-    height: 33%;
-    gap: 10px;
-  }
-  .cardsContent {
-    width: 100%;
-    height: 100%;
-  }
-  #card2 {
-    margin-left: 0px;
-  }
-  #card3 {
-    margin-left: 0px;
-  }
+
   #MiddleContent {
     width: 100%;
   }
